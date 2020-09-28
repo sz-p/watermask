@@ -8,11 +8,6 @@ A library for watermasking web pages by canvas.
 
 ## Install
 
-### CDN
-```js
-<script src="https://unpkg.com/watermask-lib@1.0.3/dist/watermask.min.js"></script>
-```
-
 ### npm
 
 ```
@@ -55,7 +50,9 @@ new WaterMask({
     xGap: 200,
     yGap: 100,
     image: '',
-    repeat: true
+    repeat: true,
+    checkDom: true,
+    checkFrequency: 60 * 1000
 })
 ```
 
@@ -79,3 +76,5 @@ new WaterMask({
 | cols      | number  | 10                                   |                                                      |
 | xGap      | number  | 200                                  | px, will be used only when repeat property is true   |
 | yGap      | number  | 100                                  | px, will be used only when repeat property is true   |
+| checkDom  | boolean | true                                 | check watermask canvas is existed                    |
+| checkFrequency | number | 60 * 1000                        | check frequency ms                                   |

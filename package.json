@@ -1,16 +1,17 @@
 {
-    "name": "watermask-lib",
+    "name": "@sz-p/watermask",
     "description": "A library for watermasking web pages by canvas.",
-    "version": "1.0.3",
-    "author": "jerry",
+    "version": "0.1.0",
+    "author": "sz-p",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/alex1504/watermask"
+        "url": "https://github.com/sz-p/watermask"
     },
     "main": "dist/watermask.min.js",
     "browser": "dist/watermask.min.js",
     "devDependencies": {
+        "rollup": "^2.28.2",
         "@babel/core": "^7.2.0",
         "@babel/preset-env": "^7.2.0",
         "babel-preset-latest": "^6.24.1",
